@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/index.css">
+    <title>Tarefas</title>
+</head>
+<body>
+    <header>
+        <h1>Lista de Tarefas</h1>
+      </header>
+      <main>
+        <nav>
+            <ul>
+                <li><a href="../page/guia.html"> Guia de uso</a></li>
+            </ul>
+        </nav>
+        <form>
+          <input type="text" id="conteudo" />
+          <input type="button" onclick="inserir()" value="ADICIONAR" />
+        </form>
+        <section id="areaBotoes">
+          <input type="button" onclick="urgente()" value="Urgente" id="urgente"/>
+          <input type="button" onclick="importante()" value="Importante" id="importante"/>
+          <input type="button" onclick="normal()" value="Normal" class="normal"/>
+          <input type="button" onclick="feito()" value="Feito" id="feito"/>
+        </section>
+        <section id="areaSelecaoParaExclusao">
+          <p>
+            <input type="checkbox" id="selecionaTudo" onchange="selecinoarTudo()">
+            <b>Seleção para atualização do status</b>
+          </p>
+          <input type="button" onclick="excluir()" value="Excluir" class="normal"/>
+        </section>
+        <section id="areaLista">
+        </section>
+      </main>
+      <footer>
+        Lista 2023©
+      </footer> 
+    <script src="../js/js.js"></script>
+</body>
+</html>
